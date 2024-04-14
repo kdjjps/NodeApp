@@ -8,7 +8,7 @@ dotenv.config({
 
 
 app.get('/', (req, res) => {
-    res.send('Hi , Welcome to Node Js Application')
+    res.sendFile(__dirname + '/./index.html')
 })
 
 app.listen(process.env.PORT, () => {
