@@ -10,7 +10,11 @@ const PORT = process.env.PORT || 8000
 
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/./index.html')
+    res.send('Welcome to Node Js Application')
+})
+
+app.get('/about', (req, res) => {
+    res.send('About Us')
 })
 
 app.listen(PORT, () => {
